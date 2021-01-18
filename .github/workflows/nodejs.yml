@@ -28,11 +28,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: build-files
-        #path: index.js
-        path: |
-          ./index.js
-          ./**.json
-          
+        path: index.js          
         retention-days: 10
  
   build_docker:
