@@ -29,9 +29,9 @@ jobs:
       with:
         name: build-files
         path: |
-         index.js
-         package.json
-         package-lock.json
+            index.js
+            package.json
+            package-lock.json
         retention-days: 10
  
   build_docker:
