@@ -28,10 +28,15 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: build-files
-        path: index.js
+        #path: index.js
+        path: |
+          ./index.js
+          ./**.json
+          
         retention-days: 10
  
   build_docker:
+    needs: build_npm
     runs-on: ubuntu-latest
     steps:
       - name: Download Build Artifact
