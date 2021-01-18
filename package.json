@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "nodev" : "npm version",
     "start": "node index.js"
   },
   "repository": {
