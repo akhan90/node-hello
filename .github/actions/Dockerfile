@@ -6,4 +6,4 @@ COPY pipe .
 RUN pwd && \
     ls &&  \
     chmod +x pipe.sh
-ENTRYPOINT [ "sh" , "pipe.sh" ]
+ENTRYPOINT [ "/work/pipe.sh" ]
