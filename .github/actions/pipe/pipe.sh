@@ -1,1 +1,1 @@
-echo "hellp"
+echo "hello" $DOCKERHUB_USERNAME

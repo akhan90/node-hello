@@ -39,6 +39,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build-files
+      - name: Docker action
+        with:
+          DOCKERHUB_USERNAME: adnank
+        uses: ./github/actions/
       # - name: Login to ECR
       #   id: ecr
       #   uses: elgohr/ecr-login-action@master

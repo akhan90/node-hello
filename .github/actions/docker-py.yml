@@ -1,6 +1,13 @@
 # action.yml
 name: 'docker-python-action'
+id: docker-py
+inputs:
+  DOCKERHUB_USERNAME: 
+    required: true
+    default : akhan
 description: 'Greet someone and record the time'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{inputs.DOCKERHUB_USERNAME}}
