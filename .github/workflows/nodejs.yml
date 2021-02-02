@@ -42,7 +42,7 @@ jobs:
       - name: Docker action
         with:
           DOCKERHUB_USERNAME: adnank
-        uses: ./github/actions/
+        uses: ./.github/actions/
       # - name: Login to ECR
       #   id: ecr
       #   uses: elgohr/ecr-login-action@master
