@@ -35,6 +35,8 @@ jobs:
     needs: build_npm
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        name: Checkout Code from ${{env.GITHUB_REF}}
       - name: Download Build Artifact
         uses: actions/download-artifact@v2
         with:
